@@ -1,10 +1,12 @@
 import React from "react";
-import Home from "./routes/Home";
+import Title from "./components/Title";
+import FeedContainer from "./components/FeedContainer";
 
 function App(props) {
   return (
     <div>
-      <Home />
+      <Title />
+      <FeedContainer />
     </div>
   );
 }
