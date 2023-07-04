@@ -1,11 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function FeedContainer() {
-  return (
-    <div>
-      <h1>Feed</h1>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default FeedContainer;

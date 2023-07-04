@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Title.scss";
 
 function Title() {
   const [username, setUsername] = useState("");
@@ -10,16 +11,15 @@ function Title() {
   const submitHandler = () => {
     localStorage.setItem("username", username);
   };
-  console.log(username);
 
   const nickname = localStorage.getItem("username");
   return (
-    <div>
-      <h1>⚡️바나나 레전드짤 모음집🍌</h1>
+    <div id="navContainer">
+      <h1 id="title">⚡️바나나 레전드짤 모음집🍌</h1>
       {nickname ? (
-        <span>{nickname}</span>
+        <span id="nickname">{nickname}</span>
       ) : (
-        <form>
+        <form id="loginForm">
           <input onChange={inputHandler} placeholder="Who Are You?"></input>
           <button onClick={submitHandler}>Enter</button>
         </form>
