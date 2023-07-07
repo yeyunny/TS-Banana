@@ -1,0 +1,9 @@
+#feedContainer {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 50px;
+  margin: 15px auto 0 auto;
+  gap: 10px;
+}
