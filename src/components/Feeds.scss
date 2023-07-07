@@ -5,12 +5,36 @@ img {
   border: 1px rgb(173, 214, 255) solid;
 }
 
-// #feedInput {
-//   width: 200px;
-//   height: 30px;
+.comments {
+  width: 300px;
+
+  input {
+    width: 50%;
+    height: 22px;
+    border: 1px skyblue solid;
+    border-radius: 50px;
+    padding-left: 15px;
+  }
+
+  button {
+    width: 30%;
+    height: 28px;
+    border: 1px rgb(31, 34, 36) solid;
+    background-color: rgb(216, 239, 255);
+    border-radius: 50px;
+  }
+}
+
+// #loginForm input {
+//   height: 22px;
+//   border: 1px skyblue solid;
+//   border-radius: 50px;
+//   padding-left: 15px;
 // }
 
-// #feedButton {
-//   width: 0px;
-//   height: 30px;
+// #loginForm button {
+//   height: 28px;
+//   border: 1px skyblue solid;
+//   background-color: rgb(216, 239, 255);
+//   border-radius: 50px;
 // }
