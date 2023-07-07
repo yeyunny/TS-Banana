@@ -19,7 +19,6 @@ function Feeds({ url }) {
   return (
     <div>
       <img src={url} alt="NANA" />
-      <div></div>
       <div className="comments">
         <input
           onChange={inputHandler}
