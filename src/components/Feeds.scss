@@ -5,6 +5,21 @@ img {
   border: 1px rgb(173, 214, 255) solid;
 }
 
+.commentList {
+  width: 300px;
+  margin-top: 5px;
+
+  button {
+    width: 23px;
+    height: 23px;
+    border: 1px skyblue solid;
+    background-color: rgb(216, 239, 255);
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 0;
+  }
+}
+
 .comments {
   width: 300px;
 

@@ -25,7 +25,7 @@ function Feeds({ url }) {
       <div>
         {commentsList.map((comment, index) => {
           return (
-            <div>
+            <div className="commentList">
               <span key={index}>{comment}</span>
               <button onClick={() => deleteHandler(comment)}>✖️</button>
             </div>
