@@ -10,12 +10,14 @@ function Title() {
   // input창에 들어오는 event를 관리한다
   // 함수 안에서 event를 setUsername에서 사용한다
   const inputHandler = (event) => {
+    event.preventDefault();
     setUsername(event.target.value);
   };
 
   // submit 될 때 사용하는 함수 : submit 될때 localStorage.setItem을 한다
   const submitHandler = () => {
     localStorage.setItem("username", username);
+    setUsername("");
   };
 
   // nickname 라는 변수에 localStorage.getItem 조회하기
@@ -36,7 +38,11 @@ function Title() {
         // onclick - 클할 경우 사용
         // on~ 이 달린 메소드? 확인해보면 좋을 듯
         <form id="loginForm">
-          <input onChange={inputHandler} placeholder="Who Are You?"></input>
+          <input
+            value={username}
+            onChange={inputHandler}
+            placeholder="Who Are You?"
+          ></input>
           <button onClick={submitHandler}>Enter</button>
         </form>
       )}
