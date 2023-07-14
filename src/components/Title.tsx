@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// 관련 scss 불러오기
-import "./Title.scss";
 
 // 함수로 분류하기
 function Title() {

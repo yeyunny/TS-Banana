@@ -1,5 +1,4 @@
 import Feeds from "./Feeds";
-import "./FeedContainer.scss";
 
 function FeedContainer() {
   const imageList = [

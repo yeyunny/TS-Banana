@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Feeds.scss";
 
 function Feeds({ url }) {
   const [comments, setComments] = useState("");
