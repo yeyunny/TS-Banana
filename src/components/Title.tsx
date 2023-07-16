@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 
-interface;
+interface InputHandler {
+  preventDefault: () => void;
+  target: { value: React.SetStateAction<string> };
+}
 
 // 함수로 분류하기
-function Title() {
+function Title(): React.JSX.Element {
   // input -> setUsername -> username = state 값
   const [username, setUsername] = useState("");
 
   // input창에 들어오는 event를 관리한다
   // 함수 안에서 event를 setUsername에서 사용한다
-  const inputHandler = (event) => {
+  const inputHandler = (event: InputHandler) => {
     event.preventDefault();
     setUsername(event.target.value);
   };
