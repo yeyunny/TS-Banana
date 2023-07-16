@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+interface;
+
 // 함수로 분류하기
 function Title() {
   // input -> setUsername -> username = state 값
