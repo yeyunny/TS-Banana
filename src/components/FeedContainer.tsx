@@ -1,3 +1,4 @@
+import React from "react";
 import Feeds from "./Feeds";
 
 function FeedContainer() {
