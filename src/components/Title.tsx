@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-interface InputHandler {
+export interface InputHandler {
   preventDefault: () => void;
   target: { value: React.SetStateAction<string> };
 }

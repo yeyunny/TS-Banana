@@ -1,20 +1,34 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { InputHandler } from "./Title";
 
-function Feeds({ url }) {
+interface Url {
+  url: string;
+}
+
+interface Comment {
+  id: number;
+  text: string;
+}
+
+function Feeds({ url }: Url) {
   const [comments, setComments] = useState("");
-  const [commentsList, setCommentsList] = useState([]);
+  const [commentsList, setCommentsList] = useState<Comment[]>([]);
 
-  const inputHandler = (event) => {
+  const inputHandler = (event: InputHandler) => {
     setComments(event.target.value);
   };
 
   const submitHandler = () => {
-    setCommentsList((prev) => [...prev, comments]);
+    let dateId = Date.now();
+    setCommentsList((prev: Comment[]) => [
+      ...prev,
+      { id: dateId, text: comments },
+    ]);
     setComments("");
   };
 
-  const deleteHandler = (comment) => {
-    const list = commentsList.filter((item) => item !== comment);
+  const deleteHandler = (commentId: number) => {
+    const list = commentsList.filter((item: Comment) => item.id !== commentId);
     setCommentsList(list);
   };
 
@@ -22,11 +36,11 @@ function Feeds({ url }) {
     <div>
       <img src={url} alt="NANA" />
       <div>
-        {commentsList.map((comment, index) => {
+        {commentsList.map((comment: Comment) => {
           return (
             <div className="commentList">
-              <span key={index}>{comment}</span>
-              <button onClick={() => deleteHandler(comment)}>✖️</button>
+              <span key={comment.id}>{comment.text}</span>
+              <button onClick={() => deleteHandler(comment.id)}>✖️</button>
             </div>
           );
         })}
