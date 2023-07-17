@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Title.scss";
 
 export interface InputHandler {
   preventDefault: () => void;
@@ -6,7 +7,7 @@ export interface InputHandler {
 }
 
 // 함수로 분류하기
-function Title(): React.JSX.Element {
+function Title() {
   // input -> setUsername -> username = state 값
   const [username, setUsername] = useState("");
 

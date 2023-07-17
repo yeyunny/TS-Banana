@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { InputHandler } from "./Title";
+import "./Feeds.scss";
 
 interface Url {
   url: string;
