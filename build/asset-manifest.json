@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TS-Banana/public/static/css/main.ac10b21a.css",
+    "main.js": "/TS-Banana/public/static/js/main.b9c1bb3d.js",
+    "index.html": "/TS-Banana/public/index.html",
+    "main.ac10b21a.css.map": "/TS-Banana/public/static/css/main.ac10b21a.css.map",
+    "main.b9c1bb3d.js.map": "/TS-Banana/public/static/js/main.b9c1bb3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac10b21a.css",
+    "static/js/main.b9c1bb3d.js"
+  ]
+}
